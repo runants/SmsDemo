@@ -27,7 +27,7 @@ public class Consumer {
 
         try {
             SendSmsResponse smsResponse = smsUtils.sendSms(map);
-            System.out.println("code:"+smsResponse.getCode() + "message:"+smsResponse.getMessage());
+            System.out.println("code:"+smsResponse.getCode() + "message is:"+smsResponse.getMessage());
         } catch (ClientException e) {
             e.printStackTrace();
         }
